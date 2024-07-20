@@ -1,0 +1,137 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+.navbar {
+  height: 4rem;
+  background-color: white;
+}
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link {
+  color: #222222 !important;
+}
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info {
+  height: 7rem;
+  display: flex;
+  background-color: #ebebeb;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.f-info-socials {
+  font-size: 1.15rem;
+}
+.f-info-socials i {
+  margin-right: 1rem;
+}
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+.card-text p {
+  font-weight: 400 !important;
+}
+.listing-links {
+  text-decoration: none !important;
+}
+/* card effect */
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.15;
+  background-color: white;
+}
+/* new page */
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+/* edit page */
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+/* show page  */
+.show-img {
+  height: 65vh;
+}
+@media screen and (max-width: 790px) {
+  .show-img {
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 791px) and (max-width: 1100px) {
+  .show-img {
+    height: 50vh;
+  }
+}
+.show-head {
+  text-align: center;
+}
+.show-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.btn-hover :hover {
+  background-color: black !important;
+}
+.btn-bet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+.some {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (min-width: 992px) {
+  .some {
+    margin-left: 10%;
+  }
+}
+.btns-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#map {
+  width: 550px;
+  height: 65vh;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+}
