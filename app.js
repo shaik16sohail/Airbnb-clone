@@ -64,7 +64,7 @@ main()
     .catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect(dbUrl);
+  await mongoose.connect(mongoDB);
 }
 app.use(session(sessionOptions));
 app.use(flash());
