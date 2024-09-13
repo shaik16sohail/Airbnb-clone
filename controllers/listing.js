@@ -9,6 +9,18 @@ module.exports.index=async (req,res)=>{
     let allListings=await Listing.find({});
     res.render("./listings/index.ejs",{allListings});
 };
+module.exports.type=async(req,res)=>{
+    let {name}=req.params;
+    let allListings=await Listing.find({kind:{$eq:name}});
+    res.render("./listings/index.ejs",{allListings});
+};
+module.exports.search=async(req,res)=>{
+    let {search}=req.query;
+    let allListings = await Listing.find({
+        title: { $regex: search, $options: 'i' } // 'i' makes the search case-insensitive
+      });
+    res.render("./listings/index.ejs",{allListings});
+}
 //new
 module.exports.new=(req,res)=>{
     res.render("./listings/new.ejs");

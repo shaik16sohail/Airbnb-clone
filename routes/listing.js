@@ -15,6 +15,10 @@ router.route("/")
     .get(wrapAsync(listingController.index))
     .post(isLoggedIn,upload.single('image'),validateListing,wrapAsync(listingController.create));
     
+router.route("/type/:name")
+    .get(wrapAsync(listingController.type));
+router.route("/search")
+    .get(wrapAsync(listingController.search));
 //new route
 router.get("/new",isLoggedIn,listingController.new);
 

@@ -130,6 +130,9 @@ body {
 #map {
   width: 550px;
   height: 65vh;
+  /* position: absolute; */
+
+
 }
 .mid{
     display: flex;

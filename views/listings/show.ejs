@@ -1,7 +1,8 @@
 <% layout("./layouts/boilerplate.ejs") -%>
 <script>
-  const mapConnect="<%= process.env.MAP_TOKEN %>";
-  // const listing='<%-idData %>';
+  const mapToken="<%=process.env.MAP_TOKEN%>";
+  let some=<%- JSON.stringify(idData.geometry.coordinates) %>
+  console.log(some);
 </script>
 <div class="btn-bet mb-3">
   <div class="btn-hover">
@@ -124,13 +125,12 @@
   </div>
 </div>
 <% } %>
-<h3>Where you'll be</h3>
+<h2>Where you'll be</h2><br>
 <div class="mid">
+  
   <div id="map"></div>
 </div>
-<script src="/map.js">
-</script>
-
-		
- 
+<br>
+<br>
+<script src="/map.js"></script>
 
